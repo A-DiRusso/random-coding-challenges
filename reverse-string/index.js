@@ -22,4 +22,10 @@ return s;
     return s;
 };
 
-reverseAgain('olleH');
+console.log(reverseAgain('olleH'));
+
+function recursionTernary(str) {
+    return (str === '') ? '' : recursionTernary(str.substr(1)) + str.charAt(0);
+}
+
+console.log(recursionTernary('yranreT noisruceR'));
