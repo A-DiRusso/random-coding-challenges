@@ -1,6 +1,6 @@
 const cap = 50;
 const on = 3;
-const wait = 39;
+const wait = 3;
 
 function enough(cap, on, wait) {
     let t = on + wait;
@@ -19,6 +19,7 @@ console.log(enough(cap, on, wait));
 
 function enoughShortVersion(cap, on, wait) {
     return Math.max(wait + on - cap, 0);
+    // return (on + wait > cap) ? "Not Enough Room" : "Welcome Aboard";
   }
 
 
